@@ -25,15 +25,18 @@
 
 ## WAF 설정 방법
 
-1. ACL을 생성한다 (Default ACL)
+ACL을 생성한다 (Default ACL)
 
 ![waf-1](./public/waf-1.png)
 ![waf-2](./public/waf-2.png)
 ![waf-3](./public/waf-3.png)
 ![waf-3.5](./public/waf-3.5png)
 ![waf-4](./public/waf-4.png)
+![waf-6](./public/waf-6.png)
 
-2. ACL 규칙 추가
+## DVWA를 활용한 공격 방법 + ACL 설정
+
+- [SQL_injection](./attacker/SQL_injection.md)
 
 ## Reference
 
