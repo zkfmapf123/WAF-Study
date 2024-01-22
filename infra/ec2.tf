@@ -30,10 +30,18 @@ resource "aws_security_group" "ins-sg" {
   description = "description"
 
   ingress {
-    from_port   = 0
-    to_port     = 0
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port       = 80
+    to_port         = 80
+    protocol        = "tcp"
+    cidr_blocks     = ["0.0.0.0/0"]
+    security_groups = [aws_security_group.alb-sg.id]
   }
 
   egress {
@@ -79,4 +87,8 @@ module "waf-ec2" {
     "Monitoring" : true,
     "MadeBy" : "terraform"
   }
+}
+
+output "ec2" {
+  value = module.waf-ec2
 }
