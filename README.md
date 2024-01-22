@@ -37,6 +37,7 @@ ACL을 생성한다 (Default ACL)
 ## DVWA를 활용한 공격 방법 + ACL 설정
 
 - [SQL_injection](./attacker/SQL_injection.md)
+- [만약 우선순위를 잘못준다면?](./attacker/bad_priority.md)
 
 ## Reference
 
